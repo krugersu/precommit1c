@@ -61,20 +61,27 @@ source_in_source = False
 ##Командная строка запуска OneScript
 
 ```
-oscript v8files-extractor.os ?
+oscript v8files-extractor.os
 
 Утилита сборки/разборки внешних файлов 1С
 
 Параметры командной строки:
-        --decompile inputPath outputPath
+        --decompile inputPath outputPath [--debug]
                 Разбор файлов на исходники
+				inputPath   Путь к файлу, который распаковывается
+				outputPath   Путь к каталогу, куда распаковывать
         --help
                 Показ этого экрана
-        --git-precommit outputPath
+        --git-precommit [outputPath] [--debug]
                 Запустить чтение индекса из git и определить список файлов для разбора, разложить их и добавить исходники в индекс
-        --compile inputPath outputPath [--type TYPE]
+				outputPath  Путь к каталогу, куда распаковывать. Если не задан, используется каталог .\src
+        --compile inputPath outputPath [--type TYPE] [--debug]
                 Собрать внешний файл/обработку.
+				inputPath   Путь к файлу, который распаковывается
+				outputPath   Путь к каталогу, куда распаковывать
                 В параметре --type указывается тип файла для сборки (epf/erf). Значение по умолчанию - epf
+
+Ключ --debug включает режим формирования полных логов, выводимых в консоль
 ```
 
 ##Командная строка запуска Питона
