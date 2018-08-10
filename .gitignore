@@ -62,3 +62,4 @@ docs/_build/
 target/
 
 *.ospx
+oscript_modules/
