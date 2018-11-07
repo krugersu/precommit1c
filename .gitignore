@@ -63,3 +63,6 @@ target/
 
 *.ospx
 oscript_modules/
+
+#VSCode
+.vscode/
