@@ -66,3 +66,5 @@ oscript_modules/
 
 #VSCode
 .vscode/
+bdd-log.xml
+tests.xml
